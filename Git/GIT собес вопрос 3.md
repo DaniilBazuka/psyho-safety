@@ -3,9 +3,11 @@
 
 `git pull` часто воспринимают как одну команду, но **под капотом это макрос**, который выполняет две последовательные операции:
 
-	bash
-		git fetch <remote> <branch>
-		git merge FETCH_HEAD   # или git rebase, если настроено
+bash
+```
+git fetch <remote> <branch>
+git merge FETCH_HEAD   # или git rebase, если настроено
+```
 
 ### 🔍 Этап 1: `git fetch` (сетевое взаимодействие)
 
